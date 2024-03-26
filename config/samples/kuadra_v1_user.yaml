@@ -12,7 +12,15 @@ spec:
   awsAccount:
     spec:
       user:
-        userName: <insert name here>
+        userName: kuadra-test-1
         groups:
           - dns-management
-  # TODO(user): Add fields here
+  github:
+    spec:
+      username: your-github-username
+      token: your-github-token
+      organizations:
+        - name: kuadrant
+          teams:
+            - name: engineering
+              role: member

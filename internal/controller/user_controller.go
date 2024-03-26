@@ -29,12 +29,17 @@ import (
 	"sigs.k8s.io/controller-runtime/pkg/reconcile"
 
 	kuadrav1 "github.com/Kuadrant/kuadra/api/v1"
+
+	"github.com/google/go-github/github"
 )
 
-// UserReconciler reconciles a User object
+
+
+
 type UserReconciler struct {
 	client.Client
-	Scheme *runtime.Scheme
+	Scheme       *runtime.Scheme
+	GitHubClient *github.Client
 }
 
 //+kubebuilder:rbac:groups=kuadra.kuadrant.io,resources=users,verbs=get;list;watch;create;update;patch;delete
