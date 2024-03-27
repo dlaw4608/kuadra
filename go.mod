@@ -16,7 +16,11 @@ require (
 	sigs.k8s.io/controller-runtime v0.16.3
 )
 
-require github.com/google/go-querystring v1.1.0 // indirect
+require (
+	github.com/google/go-github/v38 v38.1.0 // indirect
+	github.com/google/go-querystring v1.1.0 // indirect
+	golang.org/x/crypto v0.14.0 // indirect
+)
 
 require (
 	github.com/aws/aws-sdk-go-v2/credentials v1.17.7 // indirect
